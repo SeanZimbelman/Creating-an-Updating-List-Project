@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Stuff</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container info">
+            <div class="fName flex">
+                <label for="fname">First Name</label>
+                <input class="input" id="fName" placeholder="First Name">
+            </div>
+            <div class="lName flex">
+                <label for="lname">Last Name</label>
+                <input class="input" id="lName" placeholder="Last Name">
+            </div>
+            <div class="birthday flex">
+                <label for="birthday">Date of Birth</label>
+                <input class="input" id="birthday" placeholder="MM/DD/YYYY">
+            </div>
+            <div class="departure flex">
+                <label for="departure">Departure City</label>
+                <input class="input" id="departure" placeholder="City, State (Pheonix, AZ)">
+            </div>
+            <div class="arrival flex">
+                <label for="arrival">Arrival City</label>
+                <input class="input" id="arrival" placeholder="City, State (Atlanta, GA)">
+            </div>
+            <div class="leaving flex">
+                <label for="leaving">Date Leaving</label>
+                <input class="input" id="leaving" placeholder="MM/DD/YYYY">
+            </div>
+            <div class="returning flex">
+                <label for="returning">Date Returning</label>
+                <input class="input" id="returning" placeholder="MM/DD/YYYY">
+            </div>
+            <div class="bags flex">
+                <label for="bags">How many Bags</label>
+                <input class="input" id="bags" placeholder="Number of Bags">
+            </div>
+            <div class="food flex">
+                <p>What kind of meal do you want</p>
+                <div>
+                <input type="radio" class="input" id="chicken" placeholder="First Name" name="food"
+                    onclick="food(this.id)">
+                <label for="chicken">Chicken</label>
+                </div>
+                <div>
+                <input type="radio" class="input" id="steak" placeholder="First Name" name="food"
+                    onclick="food(this.id)">
+                <label for="steak">Steak</label>
+                </div>
+                <div>
+                <input type="radio" class="input" id="salad" placeholder="First Name" name="food"
+                    onclick="food(this.id)">
+                <label for="salad">Salad</label>
+                </div>
+            </div>
+            <div class="extra flex">
+                <p>Want anything extra</p>
+                <div>
+                    <input type="checkbox" class="input" id="legs" placeholder="First Name" name="extra"
+                        onclick="extra(this.id)">
+                    <label for="legs">Legroom</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="input" id="window" placeholder="First Name" name="extra"
+                        onclick="extra(this.id)">
+                    <label for="window">Window Seat</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="input" id="headphone" placeholder="First Name" name="extra"
+                        onclick="extra(this.id)">
+                    <label for="headphone">Headphones</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="input" id="food" placeholder="First Name" name="extra"
+                        onclick="extra(this.id)">
+                    <label for="food">Extra Food</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="container search">
+            <button onclick="submit()">Submit</button>
+            <button onclick="print()">Print</button>
+            <select name="search" id="search">
+                <option value="">Select A Name</option>
+            </select>
+            <div id="printSpace"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
